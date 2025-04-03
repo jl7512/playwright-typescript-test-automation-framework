@@ -1,0 +1,30 @@
+{
+  "name": "playwright-typescript-test-automation-framework",
+  "version": "1.0.0",
+  "scripts": {
+    "test:dev": "cross-env ENV='dev' npx playwright test",
+    "test:staging": "cross-env ENV='staging' npx playwright test",
+    "test:uat": "cross-env ENV='uat' npx playwright test",
+    "test:dev:headed": "cross-env ENV='dev' npx playwright test --headed",
+    "lint": "eslint . --fix",
+    "format": "prettier --write ./src/ && prettier --write ./e2e/"
+  },
+  "keywords": [],
+  "author": "Jimmy Luu",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.13.11",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-jest": "^28.11.0",
+    "eslint-plugin-playwright": "^2.2.0",
+    "eslint-plugin-prettier": "^5.2.4",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  }
+}
